@@ -6,8 +6,6 @@ import SearchResult from "./components/SearchResults/SearchResult";
 
 export const BASE_URL = "http://localhost:9000";
 
-
-
   const App=()=>{
     const [data,setData] = useState(null);
     const [filteredData,setFilteredData] =useState(null);
@@ -94,16 +92,9 @@ export const BASE_URL = "http://localhost:9000";
     },
    ];
 
-
-
-
-
-
   if(error)  return <div>{error}</div>
   if(loading) return <div>Loading .....</div>
    
-
-
   return (
   <>
   <Container>
@@ -131,8 +122,6 @@ export const BASE_URL = "http://localhost:9000";
       
 
     </FilterContainer>
-
-
    
   </Container>
    <SearchResult  data ={filteredData}/>
